@@ -1,47 +1,25 @@
 ## Getting Started
+This project is to create 2-3 function of a smart contract connected to the frontend 
 
-Create a project using this example:
+Thirdweb api's are used for creation of this progaram
+run 'npx thirdweb create (the_name_of_your_program)
 
-```bash
-npx thirdweb create --contract --template forge-starter
-```
+## Backend
+The creation of backend works simultaneuosly with the UI/UX display of the frontend
+inside src backend folder there is Contract.sol
+- contract.sol contains the function written in code on how the program was been executed
+- Open terminal and run 'npx thirdweb deploy'
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+## Frontend
+In the frontend folder, there are series of files been worked on
+- constants folder, there is a file name addresses.
+- the addresses is connected to the api key created at the backend of the program for communication
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) to learn more.
+Pages folder contains app.tsx and index. tsx.
+These files contain all codes use in execution of the frontend program
 
-## Building the project
+And of course there is styles to beautify the ui/ux written in css
 
-After any changes to the contract, run:
+run 'yarn dev' in git bash to show the display of the program.
 
-```bash
-npm run build
-# or
-yarn build
-```
-
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) detected on your contract.
-
-## Deploying Contracts
-
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
-
-```bash
-npm run deploy
-# or
-yarn deploy
-```
-
-## Releasing Contracts
-
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+Thank you for reading!
